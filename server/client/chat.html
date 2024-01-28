@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <div>
+        <h3>Room Name:</h3>
+        <p id="roomName"></p>
+        <ul id="users"></ul>
+      </div>
+      <div>
+        <form id="chatForm">
+          <input id="message" type="text" placeholder="Your Name" />
+          <button type="submit">Send</button>
+        </form>
+        <div id="messages"></div>
+      </div>
+    </main>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
