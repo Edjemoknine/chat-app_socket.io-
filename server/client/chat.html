@@ -4,20 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <h1 class="title">InChat</h1>
     <main>
       <div>
-        <h3>Room Name:</h3>
-        <p id="roomName"></p>
+        <div class="rName">
+          <h3>Room Name:</h3>
+          <p id="roomName"></p>
+        </div>
+        <h3>Room users:</h3>
         <ul id="users"></ul>
       </div>
-      <div>
+      <div class="chat_container">
+        <div id="messages"></div>
         <form id="chatForm">
-          <input id="message" type="text" placeholder="Your Name" />
+          <input
+            autocomplete="off"
+            id="message"
+            type="text"
+            placeholder="Your Name"
+          />
           <button type="submit">Send</button>
         </form>
-        <div id="messages"></div>
       </div>
     </main>
 

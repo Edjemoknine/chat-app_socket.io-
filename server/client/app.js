@@ -51,15 +51,10 @@ socket.on("roomUsers", (data) => {
 const outputMsg = (message) => {
   const div = document.createElement("div");
   div.classList.add("messages");
-  if (typeof message === "object") {
-    div.innerHTML = `
+  div.innerHTML = `
     <p class="meta">${message?.name}
      <span>${message.time}</span></p>
     <p class="text">${message.text}</p>	`;
-  } else {
-    div.innerHTML = `
-    <p class="text">${message}</p>	`;
-  }
 
   messageCont.appendChild(div);
 };
